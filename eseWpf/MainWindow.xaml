@@ -12,6 +12,7 @@
         <Label Content="PassWord" Margin="46,85,689,324"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="46,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" AutomationProperties.ItemType="Password"/>
         <Button Content="Accedi" Margin="400,160,327,243"/>
+        <CheckBox Content="Ricorda Password" Margin="206,164,486,254" Checked="CheckBox_Checked"/>
 
     </Grid>
 </Window>
