@@ -11,11 +11,13 @@ namespace eseWpf.Classi
         private string _Username;
         private string _Password;
         private string _NomeCompleto;
+        private string _Info;
         public Utente(string username,string password,string nomeCompleto)
         {
             _Username = username;
             _Password = password;
             _NomeCompleto = nomeCompleto;
+            _Info = _NomeCompleto + _Username;
         }
         public string Username 
         {
@@ -48,6 +50,17 @@ namespace eseWpf.Classi
             set
             {
                 this._NomeCompleto = value;
+            }
+        }
+        public string Info
+        {
+            get
+            {
+                return this._Info;
+            }
+            set
+            {
+                this._Info = this._NomeCompleto+this._Username;
             }
         }
     }
